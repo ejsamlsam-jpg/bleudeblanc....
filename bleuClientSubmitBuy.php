@@ -1,52 +1,45 @@
 <?php
-    session_start();
-    include "roblesConnection.php";
+session_start();
+include "bleuConnection.php"; // updated
 
-    if(isset($_POST['roblesbuybtn'])){
-        $roblesusername = $_SESSION['roblesusername'];
+if (isset($_POST['bleubuybtn'])) {
+    $bleuusername = $_SESSION['bleuusername'];
 
-        $roblesbuyername = $_POST['roblesbuyername'];
-        $roblesquantity = $_POST['roblesquantity'];
-        $roblesprodid = $_GET['id'];
+    $bleubuyername = $_POST['bleubuyername'];
+    $bleuquantity = $_POST['bleuquantity'];
+    $bleuprodid = $_GET['id'];
 
-        
-        $sql = "SELECT * FROM roblesproducts WHERE roblesprodid ='$roblesprodid'";
-        $roblesbuyq = mysqli_query($roblesConn,$sql);
+    $sql = "SELECT * FROM bleuproducts WHERE bleuprodid ='$bleuprodid'";
+    $bleubuyq = mysqli_query($bleuConn, $sql);
 
-       if(mysqli_num_rows($roblesbuyq)===1){
-        $roblesprod = mysqli_fetch_assoc($roblesbuyq);
+    if (mysqli_num_rows($bleubuyq) === 1) {
+        $bleuprod = mysqli_fetch_assoc($bleubuyq);
 
-        $roblesproductname = $roblesprod['robles_ProductName'];
-        $roblespriceperunit = $roblesprod['robles_PriceperUnit'];
-        $roblescurrentunit = $roblesprod['robles_Unit'];
+        $bleuproductname = $bleuprod['bleu_ProductName'];
+        $bleupriceperunit = $bleuprod['bleu_PriceperUnit'];
+        $bleucurrentunit = $bleuprod['bleu_Unit'];
 
-       
-        if($roblescurrentunit >= $roblesquantity){
+        if ($bleucurrentunit >= $bleuquantity) {
 
-           
-            $newUnit = $roblescurrentunit - $roblesquantity;
-            $updateStockSql = "UPDATE roblesproducts SET robles_Unit = '$newUnit' WHERE roblesprodid='$roblesprodid'";
-            mysqli_query($roblesConn, $updateStockSql);
+            $newUnit = $bleucurrentunit - $bleuquantity;
+            $updateStockSql = "UPDATE bleuproducts SET bleu_Unit = '$newUnit' WHERE bleuprodid='$bleuprodid'";
+            mysqli_query($bleuConn, $updateStockSql);
 
-           
-            $roblestotalprice = $roblespriceperunit * $roblesquantity;
+            $bleutotalprice = $bleupriceperunit * $bleuquantity;
 
-            
-            $roblesinsertbuy = "INSERT INTO roblesorders 
-                (robles_BuyerName, robles_ProductName, robles_ProductPrice, robles_Quantity, robles_TotalPrice, robles_Account) 
-                VALUES ('$roblesbuyername','$roblesproductname','$roblespriceperunit','$roblesquantity','$roblestotalprice','$roblesusername')";
+            $bleuinsertbuy = "INSERT INTO bleuorders 
+                (bleu_BuyerName, bleu_ProductName, bleu_ProductPrice, bleu_Quantity, bleu_TotalPrice, bleu_Account) 
+                VALUES ('$bleubuyername','$bleuproductname','$bleupriceperunit','$bleuquantity','$bleutotalprice','$bleuusername')";
 
-            mysqli_query($roblesConn,$roblesinsertbuy);
+            mysqli_query($bleuConn, $bleuinsertbuy);
 
-            header("location: roblesClientProduct.php");
+            header("location: bleuClientProduct.php");
             exit;
-        }
-        else{
-            
-            echo "<script>alert('Not enough stock!'); window.location.href='roblesClientBuyProduct.php?id=$roblesprodid';</script>";
+        } else {
+
+            echo "<script>alert('Not enough stock!'); window.location.href='bleuClientBuyProduct.php?id=$bleuprodid';</script>";
             exit;
         }
     }
-
-    }
+}
 ?>

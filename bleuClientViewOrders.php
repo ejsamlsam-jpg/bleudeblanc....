@@ -8,15 +8,15 @@
 <style>
 body {
     font-family: "Georgia", serif;
-    background-color: #000;
-    color: #fff;
+    background-color: #ffffff;
+    color: #000000;
     margin: 0;
     padding: 30px;
 }
 
 h1 {
     text-align: center;
-    color: #fff;
+    color: #000000;
     font-size: 2.5rem;
     margin-bottom: 20px;
     letter-spacing: 1px;
@@ -26,15 +26,15 @@ table {
     width: 90%;
     margin: 0 auto;
     border-collapse: collapse;
-    background: #fff;
+    background: #b8b8b8;
     color: #000;
     box-shadow: 0 4px 10px rgba(0,0,0,0.5);
-    border: 2px solid #000;
+    
 }
 
 table thead {
-    background: #000;
-    color: #fff;
+    background: #ffffff;
+    color: #000000;
 }
 
 table th {

@@ -9,29 +9,30 @@ if (!isset($_SESSION['role']) || $_SESSION['role'] !== 'admin') {
     exit();
 }
 ?>
-
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Admin</title>
+<title>Admin Panel</title>
 </head>
-<frameset rows="20%,*,12%">
-    <!-- Header -->
-    <frameset cols="*">
-        <frame noresize src="bleuHeader.php" scrolling="NO">
-    </frameset>
 
-    <!-- Main content -->
+<frameset rows="20%,*,12%" border="0">
+
+    <!-- HEADER -->
+    <frame src="bleuHeader.php" noresize scrolling="no">
+
+    <!-- MAIN AREA -->
     <frameset cols="30%,*">
-        <!-- Navigation -->
-        <frame noresize src="bleuAdminNav.php" scrolling="NO" name="nav_column">
-        <!-- Main page content -->
-        <frame noresize src="bleuAdminProduct.php" name="mid_column">
+
+        <!-- LEFT NAV -->
+        <frame src="bleuAdminNav.php" name="nav_column" noresize scrolling="no">
+
+        <!-- RIGHT OUTPUT -->
+        <frame src="bleuAdminProduct.php" name="column">
+
     </frameset>
 
-    <!-- Footer -->
-    <frame noresize src="bleuFooter.php" scrolling="NO">
+    <!-- FOOTER -->
+    <frame src="bleuFooter.php" noresize scrolling="no">
+
 </frameset>
-</html>
+

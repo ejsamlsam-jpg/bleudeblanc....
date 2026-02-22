@@ -24,8 +24,8 @@ $bleuuserres = $bleuConn->query($bleusql);
 <style>
 body {
     font-family: "Georgia", serif;
-    background-color: #000;
-    color: #fff;
+    background-color: #ffffff;
+    color: #000000;
     margin: 0;
     padding: 30px;
 }
@@ -35,51 +35,51 @@ h1 {
     font-size: 2.5rem;
     margin-bottom: 20px;
     letter-spacing: 1px;
-    text-shadow: 2px 2px 3px rgba(255,255,255,0.2);
+    text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.2);
 }
 
 table {
     width: 95%;
     margin: 0 auto;
     border-collapse: collapse;
-    background: #111;
-    box-shadow: 0 4px 10px rgba(255,255,255,0.2);
-    border: 2px solid #fff;
+    background: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border: 1px solid #000000;
 }
 
 table thead {
-    background: #222;
-    color: #fff;
+    background: #5b5656;
+    color: #ffffff;
 }
 
 table th {
     padding: 12px;
     font-size: 1rem;
     letter-spacing: 0.5px;
-    border-bottom: 3px solid #fff;
+    border-bottom: 3px solid #000000;
 }
 
 table td {
     padding: 10px;
     text-align: center;
-    color: #fff;
-    border-bottom: 1px solid #888;
+    color: #000000;
+    border-bottom: 1px solid #000000;
 }
 
 table tbody tr:nth-child(even) {
-    background-color: #111;
+    background-color: #ffffff;
 }
 
 table tbody tr:hover {
-    background-color: #333;
+    background-color: #a8a8a8;
     transform: scale(1.01);
     transition: 0.2s ease;
 }
 
 .bleuappbtn {
-    background: #444;
-    color: #fff;
-    border: 2px solid #fff;
+    background: #ffffff;
+    color: #000000;
+    border: 2px solid #000000;
     padding: 6px 12px;
     font-size: 0.9rem;
     cursor: pointer;
@@ -88,14 +88,14 @@ table tbody tr:hover {
 }
 
 .bleuappbtn:hover {
-    background: #666;
+    background: #000000;
     transform: translateY(-2px);
-    box-shadow: 2px 2px 6px rgba(255,255,255,0.2);
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
 }
 
 table td[colspan] {
     font-style: italic;
-    color: #ccc;
+    color: #000000;
     padding: 20px;
 }
 </style>

@@ -131,7 +131,7 @@ button.bleuLogIn:hover {
 <body>
 
 <form action="bleuVerifyUser.php" method="POST" autocomplete="off">
-    <h1>Welcome to Bookstore</h1>
+    <h1>Welcome to Bleu De Blanc</h1>
 
     <input type="text" name="uname" id="username" placeholder="Enter Username" required>
     <input type="password" name="pass" id="password" placeholder="Enter Password" required>
@@ -162,3 +162,4 @@ hideErrorMessage();
 
 </body>
 </html>
+

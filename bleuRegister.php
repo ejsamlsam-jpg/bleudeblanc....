@@ -182,7 +182,7 @@ button.bleuSignUp:hover {
 <body>
 
 <form action="bleuInsert.php" method="POST" autocomplete="off">
-    <h1>Welcome to Bookstore</h1>
+    <h1>Welcome to bleu de blanc</h1>
 
     <table>
         <tr>

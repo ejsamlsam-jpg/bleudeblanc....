@@ -7,8 +7,8 @@
 <style>
 body.products-page {
     font-family: "Georgia", serif;
-    background-color: #000;
-    color: #fff;
+    background-color: #ffffff;
+    color: #000000;
     padding: 30px;
 }
 
@@ -17,7 +17,7 @@ h1 {
     font-size: 2.5rem;
     margin-bottom: 20px;
     letter-spacing: 1px;
-    text-shadow: 2px 2px 3px rgba(255,255,255,0.2);
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
 }
 
 .bleucon {
@@ -28,19 +28,19 @@ h1 {
 }
 
 .bleucard {
-    background: #111;
-    border: 2px solid #fff;
+    background: #ffffff;
+    border: 2px solid #000000;
     border-radius: 10px;
     width: 300px;
     padding: 20px;
-    box-shadow: 0 4px 10px rgba(255,255,255,0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
 }
 
 .bleucard:hover {
     transform: translateY(-3px);
-    box-shadow: 0 8px 15px rgba(255,255,255,0.3);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
 }
 
 .bleucard img {
@@ -63,10 +63,10 @@ h1 {
 .bleucard input[type="text"] {
     width: 90%;
     padding: 5px;
-    border: 1px solid #fff;
+    border: 1px solid #000000;
     border-radius: 5px;
-    background-color: #222;
-    color: #fff;
+    background-color: #ffffff;
+    color: #000000;
     font-family: "Georgia", serif;
 }
 

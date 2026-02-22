@@ -7,8 +7,8 @@
 <style>
 body {
     font-family: "Georgia", serif;
-    background-color: #000;
-    color: #fff;
+    background-color: #ffffff;
+    color: #000000;
     margin: 0;
     padding: 30px;
 }
@@ -25,9 +25,9 @@ table {
     width: 90%;
     margin: 0 auto;
     border-collapse: collapse;
-    background: #111;
-    box-shadow: 0 4px 10px rgba(255,255,255,0.2);
-    border: 2px solid #fff;
+    background: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border: 1px solid #fff;
 }
 
 table thead {
@@ -39,29 +39,29 @@ table th {
     padding: 12px;
     font-size: 1rem;
     letter-spacing: 0.5px;
-    border-bottom: 3px solid #fff;
+    border-bottom: 3px solid #000000;
 }
 
 table td {
     padding: 10px;
     text-align: center;
-    color: #fff;
-    border-bottom: 1px solid #888;
+    color: #000000;
+    border-bottom: 1px solid #000000;
 }
 
 table tbody tr:nth-child(even) {
-    background-color: #111;
+    background-color: #ffffff;
 }
 
 table tbody tr:hover {
-    background-color: #333;
+    background-color: #ffffff;
     transform: scale(1.01);
     transition: 0.2s ease;
 }
 
 table td[colspan] {
     font-style: italic;
-    color: #ccc;
+    color: #000000;
     padding: 20px;
 }
 </style>

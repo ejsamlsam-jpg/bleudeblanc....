@@ -8,14 +8,14 @@
 <style>
 body.products-page {
     font-family: "Georgia", serif;
-    background-color: #000;
-    color: #fff;
+    background-color: #ffffff;
+    color: #000000;
     padding: 30px;
 }
 
 h1 {
     text-align: center;
-    color: #fff;
+    color: #000000;
     font-size: 2.5rem;
     margin-bottom: 20px;
     letter-spacing: 1px;
@@ -30,8 +30,9 @@ h1 {
 
 .bleucard {
     background: #fff;
+    box-shadow: 0 -2px 8px rgba(0,0,0,0.4);
     color: #000;
-    border: 2px solid #000;
+    border: 1px solid #000;
     border-radius: 10px;
     width: 220px;
     padding: 15px;

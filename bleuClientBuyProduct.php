@@ -7,8 +7,8 @@
 <style>
 body.products-page {
     font-family: "Georgia", serif;
-    background-color: #000;
-    color: #fff;
+    background-color: #ffffff;
+    color: #000000;
     padding: 30px;
 }
 
@@ -17,7 +17,7 @@ h1 {
     font-size: 2.5rem;
     margin-bottom: 20px;
     letter-spacing: 1px;
-    text-shadow: 2px 2px 3px rgba(255,255,255,0.2);
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
 }
 
 .bleucon {
@@ -28,12 +28,12 @@ h1 {
 }
 
 .bleucard {
-    background: #111;
-    border: 2px solid #fff;
+    background: #ffffff;
+    border: 1px solid #000000;
     border-radius: 10px;
     width: 350px;
     padding: 20px;
-    box-shadow: 0 4px 10px rgba(255,255,255,0.2);
+    box-shadow:  5px 10px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
 }
@@ -64,10 +64,10 @@ h1 {
 .bleucard input[type="number"] {
     width: 90%;
     padding: 5px;
-    border: 1px solid #fff;
+    border: 1px solid #000000;
     border-radius: 5px;
-    background-color: #222;
-    color: #fff;
+    background-color: #ffffff;
+    color: #000000;
     font-family: "Georgia", serif;
 }
 
@@ -91,7 +91,7 @@ h1 {
 </style>
 </head>
 <body class="products-page">
-<h1>Buy Product</h1>
+<h1>Add to Cart</h1>
 <br><br>
 <div class="bleucon">
 <?php
@@ -144,7 +144,7 @@ if(mysqli_num_rows($result) === 1){
                         </tr>
                         <tr>
                             <td colspan="2" style="text-align:center;">
-                                <button class="bleuviewbtn" name="bleubuybtn" type="submit">Buy</button>
+                                <button class="bleuviewbtn" name="bleubuybtn" type="submit">Add to cart</button>
                                 <button class="bleuviewbtn" type="button" onclick="window.location.href=\'bleuClientProduct.php\'">Cancel</button>
                             </td>
                         </tr>

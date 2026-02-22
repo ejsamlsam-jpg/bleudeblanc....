@@ -17,7 +17,7 @@ if (!isset($_SESSION['role']) || $_SESSION['role'] !== 'client') {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Client Dashboard</title>
 </head>
-<frameset rows="20%,*,12%">
+<frameset rows="20%,*,12%" border=0>
     <!-- Header -->
     <frameset cols="*">
         <frame noresize src="bleuHeader.php" scrolling="NO">
@@ -26,7 +26,7 @@ if (!isset($_SESSION['role']) || $_SESSION['role'] !== 'client') {
     <!-- Sidebar + Main content -->
     <frameset cols="30%,*">
         <frame noresize src="bleuClientNav.php" scrolling="NO" name="nav_column">
-        <frame noresize src="bleuClientProduct.php" name="mid_column">
+        <frame noresize src="bleuClientProduct.php" name="column">
     </frameset>
 
     <!-- Footer -->

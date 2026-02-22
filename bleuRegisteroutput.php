@@ -48,11 +48,11 @@ body::before {
     animation: fadeIn 1s ease;
 }
 h1 {
-    color: #4a3628;
+    color: black;
     font-size: 2.2rem;
     margin-bottom: 15px;
     letter-spacing: 1px;
-    text-shadow: 2px 2px 3px rgba(0,0,0,0.13);
+    text-shadow: 2px 2px 3px gray;
 }
 h2 {
     margin: 15px 0 5px 0;
@@ -63,19 +63,19 @@ span {
     color: #b1342f;
 }
 button {
-    background: #c7a57a;
+    background: #180f03bd;
     padding: 8px 25px;
     margin-top: 18px;
     font-size: 17px;
     font-weight: bold;
-    border: 2px solid #8a6a48;
+    border: 2px ;
     border-radius: 6px;
     cursor: pointer;
     transition: all 0.3s ease;
-    color: #3b2c20;
+    color: black;
 }
 button:hover {
-    background: #b08c62;
+    background: white;
     transform: translateY(-2px) scale(1.05);
     box-shadow: 2px 2px 6px rgba(0,0,0,0.15);
 }
