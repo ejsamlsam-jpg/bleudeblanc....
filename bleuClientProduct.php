@@ -8,9 +8,10 @@
 <style>
 body.products-page {
     font-family: "Georgia", serif;
-    background-color: #ffffff;
-    color: #000000;
-    padding: 30px;
+    background: linear-gradient(135deg, #f8f4f0 0%, #e8e2d9 100%);
+    color: #000;
+    line-height: 1.7;
+    overflow-x: hidden;
 }
 
 h1 {

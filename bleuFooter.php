@@ -1,71 +1,113 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bleu De Blanc</title>
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-brand">
+      <h2>Bleu De Blanc</h2>
+      <p>Crafting affordable luxury fragrances from the heart of the Philippines</p>
+    </div>
+    <div class="footer-contact">
+      <h3>Contact</h3>
+      <p>Email: <a href="mailto:bleudeblanc@gmail.com">bleudeblanc@gmail.com</a></p>
+      <p>Number: <a href="mailto:bleudeblanc@gmail.com"></a>09123456789</p>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Bleu De Blanc. All rights reserved.</p>
+  </div>
+</footer>
 
 <style>
-* { margin: 0; padding: 0; box-sizing: border-box; }
-
-body {
-    font-family: "Georgia", serif;
-    background: linear-gradient(135deg, #111, #000);
-    color: white;
-    min-height: 100vh;
-    display: grid;
-    grid-template-rows: 1fr auto;
-}
-
-.main {
-    padding: 20px 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-}
-
-h1 {
-    font-size: clamp(1.5rem, 4vw, 2rem);
-    margin-bottom: 15px;
-}
-
-.tagline {
-    font-size: 0.9rem;
-    color: #ccc;
-    margin-bottom: 25px;
-    opacity: 0.8;
-}
-
-.cta {
-    background: rgba(255,255,255,0.1);
-    color: white;
-    padding: 8px 20px;
-    border: 1px solid rgba(255,255,255,0.2);
-    border-radius: 20px;
-    text-decoration: none;
-    font-size: 0.8rem;
-    display: inline-block;
-}
 
 .footer {
-    background: #000;
-    padding: 15px;
+    font-family: "Georgia", serif;
+    background: linear-gradient(135deg, #ffffff 0%, #e8e2d9 100%);
+    color: #333;
+    padding: auto;
+    margin-top: auto;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto 30px;
+}
+
+.footer h2 {
+    font-size: 1.8rem;
+    margin: 0 0 10px 0;
+    color: #000;
+}
+
+.footer h3 {
+    margin: 0 0 15px 0;
+    font-size: 1.1rem;
+    color: #000;
+    font-weight: 600;
+}
+
+.footer p, .footer a {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #333;
+    text-decoration: none;
+}
+
+.footer p a:hover {
+    text-decoration: underline;
+}
+.footer-contact p {
+    margin: 0 0 10px 0;
+}
+
+.social-icons {
+    display: flex;
+    gap: 12px;
+}
+
+.social-icons a img {
+    width: 28px;
+    height: 28px;
+    transition: transform 0.2s ease;
+}
+
+.social-icons a:hover img {
+    transform: scale(1.1);
+}
+
+.footer-bottom {
     text-align: center;
-    font-size: 0.75rem;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+    font-size: 0.85rem;
     color: #666;
-    border-top: 1px solid #333;
+    margin-top: 20px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+    
+    .footer h2 {
+        font-size: 1.5rem;
+    }
+    
+    .social-icons {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        padding: 30px 15px 15px;
+    }
+    
+    .footer-container {
+        gap: 25px;
+    }
 }
 </style>
-</head>
-
-<body>
-    <main class="main">
-        <h1>Bleu De Blanc</h1>
-        <p class="tagline">bleudeblanc@gmail.com</p>
-        <a href="#" class="cta">Shop</a>
-    </main>
-
-    <footer class="footer">© 2026 | info@bleudeblanc.com</footer>
-</body>
-</html>
