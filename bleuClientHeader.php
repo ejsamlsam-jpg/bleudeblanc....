@@ -12,7 +12,7 @@
         
         body {
             margin: 0;
-            padding: 10px;
+            padding: 0;
             font-family: "Georgia", serif;
             background: linear-gradient(135deg, #f8f4f0 0%, #e8e2d9 100%);
             color: #000;
@@ -204,7 +204,8 @@
                 <li><a href="bleuClientProduct.php" class="nav-link" data-page="product" target="column">Products</a></li>
                 <li><a href="bleuClientViewOrders.php" class="nav-link" data-page="orders" target="column">Cart</a></li>
                 <li><a href="bleuClientViewOrders.php" class="nav-link" data-page="checkout" target="column">Checkout</a></li>
-                <li><a href="bleuProfile.php" class="nav-link" data-page="profile" target="column">Profile</a></li>
+                <li><a href="bleuProfile.php" class="nav-link" data-page="profile" >Profile</a></li>
+                <li><a href="bleuClientViewOrders.php" class="nav-link" data-page="about" target="column">About</a></li>
                 <li><a href="bleuLogout.php" class="logout-btn" id="logoutLink" target="_parent">Logout</a></li>
             </ul>
         </div>
@@ -219,12 +220,11 @@
     </main>
 
     <script>
-    document.getElementById("logoutLink").addEventListener("click", function (event) {
+document.getElementById("logoutLink").addEventListener("click", function (event) {
     if (!confirm("Are you sure you want to log out?")) {
         event.preventDefault();
-        }
-    });
+    }
+});
 </script>
-    
 </body>
 </html>
